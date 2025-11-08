@@ -1,107 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="MS MAHEEN and ALI">
     <title>MujiInspired - Home</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
 
-    <header>
-
-        <div class="navbar">
-            <div class="logo">MS Maheen</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">MujiInspired</div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-       
-    </header>
-    <p>Welcome to our online platform,
-        a curated destination for a seamless
-        shopping experience. Discover a diverse range
-        of high-quality products carefully selected to
-        cater to your every need. From trendy fashion
-        pieces to essential home goods, we offer a wide
-        array of items at competitive prices. Our
-        user-friendly interface ensures easy navigation,
-        allowing you to browse and select products with ease.
-        With secure payment options and prompt delivery services,
-        we prioritize your convenience and satisfaction. Whether
-        you're looking for the latest fashion trends or practical
-        everyday essentials, our website is your go-to destination
-        for a seamless online shopping adventure</p>
-    </section>
-   
-        <div class="img">
-           
-        </div>
+    </nav>
+</header>
 
-        <section class="registration-section">
-            <div class="container">
-                <h2>Register to Make a Purchase</h2>
-                <form action="submit_registration.php" method="post">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full-name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                    
-                    <button type="submit">Register</button>
-                </form>
-            </div>
-        </section>
-    
-    <section class="hero">
-        <div class="container">  
+<!-- HERO / WELCOME SECTION -->
+<section class="welcome-section">
+    <video autoplay muted loop class="background-video">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="welcome-text">
+        <h1>Welcome to MujiInspired</h1>
+        <p>Where simplicity meets quality in every product</p>
+        <div class="hero-buttons">
+            <a href="products.html" class="btn">Shop Now</a>
+            <a href="about.html" class="btn">Learn More</a>
         </div>
-   
+    </div>
+</section>
 
-    <section class="products">
-        <div class="container">
-            <h2>Featured Products</h2>
-            <div class="product-card">
-                <img src="images1.jpg" alt="Product 1">
-                <h3 style="color: black;">creap</h3>
-            </div>
-            <div class="product-card">
-                <img src="images2.jpg" alt="Product 2">
-                <h3 style="color: black;">dasses</h3>
-            </div>
-            <div class="product-card">
-                <img src="images3.jpg" alt="Product 3">
-                <h3 style="color: black;">crunky ball nude</h3>
-            </div>
-            <div class="product-card">
-                <img src="images4.jpg" alt="Product 4">
-                <h3 style="color: black;">cream collon</h3>
-            </div>
-            <div class="product-card">
-                <img src="images5.jpg" alt="Product 5">
-                <h3 style="color: black;">byfood</h3>
-            </div>
+<!-- FEATURED PRODUCTS -->
+<section class="products-section">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="images/product 1.jpg" alt="Product 1">
+            <h3>Creap</h3>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 MujiInspired. All rights reserved.</p>
+        <div class="product-card">
+            <img src="images/product 2.jpg" alt="Product 2">
+            <h3>Dasses</h3>
         </div>
-    </footer>
+        <div class="product-card">
+            <img src="images/product 3.jpg" alt="Product 3">
+            <h3>Crunky Ball Nude</h3>
+        </div>
+        <div class="product-card">
+            <img src="images/product 4.jpg" alt="Product 4">
+            <h3>Cream Collon</h3>
+        </div>
+        <div class="product-card">
+            <img src="images/product 5.jpg" alt="Product 5">
+            <h3>Byfood</h3>
+        </div>
+    </div>
+</section>
 
-    <script src="js/script.js"></script>
+<!-- ABOUT PREVIEW SECTION -->
+<section class="about-section">
+    <h2>About MujiInspired</h2>
+    <p>We are inspired by Muji's minimalist approach. Every product is carefully selected for simplicity, functionality, and style.</p>
+    <a href="about.html" class="btn">Read More</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2023 MujiInspired. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
-
 </html>

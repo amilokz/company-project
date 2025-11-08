@@ -1,108 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MujiInspired - Products</title>
-    <link rel="stylesheet" href="products.css">
-
-    <style>
-        .products {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.product-card {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-    <header style="background-color: black; color: white;">
-        <div class="navbar">
-            <div class="logo">MujiInspired</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
 
-    <section class="products" style="background-color: rgb(191, 199, 199);">
-        <div class="container">
-            <h2>Featured Products</h2>
-            <div class="product-card">
-                <img src="images1.jpg" alt="Product 1">
-                <h3 style="color: black;">creap</h3>
-            </div>
-            <div class="product-card">
-                <img src="images2.jpg" alt="Product 2">
-                <h3 style="color: black;">dasses</h3>
-            </div>
-            <div class="product-card">
-                <img src="images3.jpg" alt="Product 3">
-                <h3 style="color: black;">crunky ball nude</h3>
-            </div>
-            <div class="product-card">
-                <img src="images4.jpg" alt="Product 4">
-                <h3 style="color: black;">cream collon</h3>
-            </div>
-            <div class="product-card">
-                <img src="images5.jpg" alt="Product 5">
-                <h3 style="color: black;">byfood</h3>
-            </div>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">MujiInspired</div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="product-card">
-            <img src="image6.jpg" alt="Product 5">
-            <h3 style="color: black;">images6</h3>
-        </div>
-        <div class="product-card">
-            <img src="image7.jpg" alt="Product 5">
-            <h3 style="color: black;">images7</h3>
-        </div>
-        <div class="product-card">
-            <img src="image8.jpg" alt="Product 5">
-            <h3 style="color: black;">images8</h3>
-        </div>
-        <div class="product-card">
-            <img src="images9.jpg" alt="Product 5">
-            <h3 style="color: black;">images9</h3>
-        </div>
-        <div class="product-card">
-            <img src="image10.jpg" alt="Product 5">
-            <h3 style="color: black;">images10</h3>
-        </div>
-        <div class="product-card">
-            <img src="images11.jpg" alt="Product 5">
-            <h3 style="color: black;">images11</h3>
-        </div>
-        <div class="product-card">
-            <img src="camera.jpg" alt="Product 5" style="height: 185px;">
-            <h3 style="color: black;">camera</h3>
-        </div>
-    </section>
+    </nav>
+</header>
 
-    <footer>
-        <div class="container" style="background-color: black; color: white;height: 50px;">
-            <p>&copy; 2023 MujiInspired. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- PRODUCTS SECTION -->
+<section class="products-section">
+    <h2>All Products</h2>
+    <div class="product-grid">
+        <div class="product-card fade-in"><img src="images/images1.jpg" alt="Creap"><h3>Creap</h3></div>
+        <div class="product-card fade-in"><img src="images/images2.jpg" alt="Dasses"><h3>Dasses</h3></div>
+        <div class="product-card fade-in"><img src="images/images3.jpg" alt="Crunky Ball Nude"><h3>Crunky Ball Nude</h3></div>
+        <div class="product-card fade-in"><img src="images/images4.jpg" alt="Cream Collon"><h3>Cream Collon</h3></div>
+        <div class="product-card fade-in"><img src="images/images5.jpg" alt="Byfood"><h3>Byfood</h3></div>
+        <div class="product-card fade-in"><img src="images/image6.jpg" alt="Images6"><h3>Images6</h3></div>
+        <div class="product-card fade-in"><img src="images/image7.jpg" alt="Images7"><h3>Images7</h3></div>
+        <div class="product-card fade-in"><img src="images/image8.jpg" alt="Images8"><h3>Images8</h3></div>
+        <div class="product-card fade-in"><img src="images/images9.jpg" alt="Images9"><h3>Images9</h3></div>
+        <div class="product-card fade-in"><img src="images/image10.jpg" alt="Images10"><h3>Images10</h3></div>
+        <div class="product-card fade-in"><img src="images/images11.jpg" alt="Images11"><h3>Images11</h3></div>
+        <div class="product-card fade-in"><img src="images/camera.jpg" alt="Camera"><h3>Camera</h3></div>
+    </div>
+</section>
 
-    <script src="js/script.js"></script>
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2023 MujiInspired. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
-
 </html>

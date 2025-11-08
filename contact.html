@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MujiInspired - Contact</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body style="background-color: rgb(193, 196, 196);">
-    <header>
-        <div class="navbar">
-            <div class="logo">MujiInspired</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">MujiInspired</div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
+</header>
 
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Insert your contact information and form here.</p>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Fill out the form below or reach us directly via email.</p>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> contact@email.com</p>
+        <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2023 MujiInspired. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 MujiInspired. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
-
 </html>
